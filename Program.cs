@@ -18,17 +18,17 @@ string PrintMyArray(int[] collect)
 int [] OnlyEvens(int[] collect)
 {
 int[] result = new int [collect.Length];
-int futLen = 0;
+int futureLen = 0;
 
    for (int i = 0; i < collect.Length; i++)
     {
     if (collect[i] % 2 == 0) 
         {
-        result[futLen] = collect[i];
-        futLen++;
+        result[futureLen] = collect[i];
+        futureLen++;
         }
     }
-Array.Resize(ref result, futLen);
+Array.Resize(ref result, futureLen);
 return result;
 }
 
